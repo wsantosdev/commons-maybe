@@ -34,7 +34,7 @@
             if (value is null)
                 return new None();
 
-            return new Maybe<T>.Some(value);
+            return new Some(value);
         }
 
         public void Match(Action<T> some, Action none)

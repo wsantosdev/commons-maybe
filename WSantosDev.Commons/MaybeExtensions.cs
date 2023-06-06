@@ -2,7 +2,7 @@
 {
     public static class MaybeExtensions
     {
-        public static Maybe<T> AsMaybe<T>(ref this T? value) where T : struct
+        public static Maybe<T> AsMaybe<T>(this T? value) where T : struct
         {
             if (value is null)
                 return new Maybe<T>.None();
